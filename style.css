@@ -1,0 +1,34 @@
+* {
+   box-sizing: border-box;
+}
+
+.main-title {
+   margin-left: 20px;
+}
+.main-section {
+   margin: 0 auto;
+   width: 60%;
+   border: 1px solid #000
+}
+
+.input-wrapper {
+   margin-top: 20px;
+   text-align: center;
+}
+.container__list {
+   text-align-last: left;
+   width: 60%;
+   margin: 0 auto;
+}
+
+.notes {
+   margin-top: 100px;
+   margin-left: 20px;
+   margin-right: 20px;
+}
+
+@media (max-width: 550px) {
+   .main-section {
+      width: 100%;
+   }
+}
