@@ -4,7 +4,6 @@ const input = document.querySelector('#input'),
    btn = document.querySelector('#btn'),
    result = document.querySelector('#list');
 
-
 btn.addEventListener('click', cleanInput);
 
 let todos = [];
@@ -21,14 +20,13 @@ function addTodo() {
    for (const todo of todos) {
       value = todo;
    }
-   if (value == '') {
-   } else {
+   if (value !== '') {
       result.innerHTML += `<li class="list-item">${value}</li>`;
    }
-
-   let removeChildOfList = document.querySelector('#list');
-
-   removeChildOfList.addEventListener('click', function (event) {
-      removeChildOfList.removeChild(event.target);
-   });
 };
+
+let removeChildOfList = document.querySelector('#list');
+removeChildOfList.addEventListener('click', function (event) {
+   removeChildOfList.removeChild(event.target);
+   console.log(removeChildOfList);
+});
