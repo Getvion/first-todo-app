@@ -11,7 +11,6 @@ let todos = [];
 function cleanInput() {
    let x = input.value;
    input.value = '';
-
    todos.push(x);
 
    addTodo();
@@ -23,10 +22,13 @@ function addTodo() {
       value = todo;
    }
    if (value == '') {
-      console.log('pusto')
-      console.log(value);
    } else {
-
-      result.innerHTML += `<li>${value}</li>`
+      result.innerHTML += `<li class="list-item">${value}</li>`;
    }
+
+   let removeChildOfList = document.querySelector('#list');
+
+   removeChildOfList.addEventListener('click', function (event) {
+      removeChildOfList.removeChild(event.target);
+   });
 };

@@ -13,12 +13,10 @@
 
 .input-wrapper {
    margin-top: 20px;
-   text-align: center;
+   margin-left: 40px;
 }
-.container__list {
-   text-align-last: left;
-   width: 60%;
-   margin: 0 auto;
+.list {
+   margin-left: 15px;
 }
 
 .notes {
