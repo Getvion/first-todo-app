@@ -2,13 +2,13 @@
    box-sizing: border-box;
 }
 
-.main-title {
-   margin-left: 20px;
-}
-.main-section {
+.main {
    margin: 0 auto;
    width: 60%;
    border: 1px solid #000
+}
+.main__title {
+   margin-left: 20px;
 }
 
 .input-wrapper {
@@ -17,6 +17,14 @@
 }
 .list {
    margin-left: 15px;
+   width: 50%;
+}
+.list-item {
+   margin-top: 5px;
+   background-color: #eee;
+}
+.list-item:hover {
+   cursor: pointer;
 }
 
 .notes {
@@ -26,7 +34,7 @@
 }
 
 @media (max-width: 550px) {
-   .main-section {
+   .main {
       width: 100%;
    }
 }
