@@ -10,24 +10,24 @@
 </head>
 
 <body>
-   <section class="main-section">
-      <h1 class="main-title">ToDo List v0.1.</h1>
+   <section class="main">
+      <h1 class="main__title">ToDo List v0.2.</h1>
       <div class="input-wrapper">
-         <input id="input" class="main-input" type="text" placeholder="Add todo">
-         <button id="btn">add todo</button>
+         <input id="input" class="main__input" type="text" placeholder="Add todo">
+         <button id="btn" type="button">add todo</button>
       </div>
       <div class="container__list">
-         <ol id="list" class="list">
-
-         </ol>
+         <ol id="list" class="list"></ol>
       </div>
 
 
-      <section class="notes">
+
+      <main class="notes">
          <h3 class="notes__title">Заметки, идеи, ход обновления</h3>
          <ul>
             <li>Апдейт 1. Сделал основную структуру, добавление элементов в список, проверка на пустое поле. </li>
             <li>Апдейт 2. Добавил удаление элемента при клике на него. </li>
+            <li>Апдейт 3. Сделал добавление элемента в список по нажатию клавиши Enter при фокусе на поле ввода.</li>
          </ul>
 
          <h3 class="notes__title">Добавить</h3>
@@ -35,10 +35,9 @@
             <li>Застилизовать корзину и переключить на нее удаление. </li>
             <li>Сортировку элементов </li>
             <li>Возможност редактирования элементов </li>
-            <li>Разделение элементов списка по цветам</li>
 
          </ul>
-      </section>
+      </main>
    </section>
 
    <script src="main.js"></script>
