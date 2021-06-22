@@ -1,11 +1,15 @@
-* {
+*, body, html {
    box-sizing: border-box;
+}
+body, html {
+   margin: 0;
+   padding: 0;
+   height: 100%;
 }
 
 .main {
    margin: 0 auto;
    width: 60%;
-   border: 1px solid #000
 }
 .main__title {
    margin-left: 20px;
@@ -17,7 +21,7 @@
 }
 .list {
    margin-left: 15px;
-   width: 50%;
+   width: 80%;
 }
 .list-item {
    margin-top: 5px;
@@ -25,6 +29,30 @@
 }
 .list-item:hover {
    cursor: pointer;
+}
+
+.reward--good, 
+.reward--bad {
+   height: 50px;
+   width: 320px;
+   display: none;
+   position: fixed;
+   top: 20px;
+   right: 100px;
+   border: 1px solid #000;
+   box-shadow: 5px 5px 15px rgb(7, 7, 7);
+   background-color: rgb(255, 255, 255);
+   color: #000;
+}
+.reward-text {
+   font-size: 16px;
+   text-align: center;
+   line-height: 50px;
+   margin: 0;
+}
+
+.visible {
+   display: block;
 }
 
 .notes {
