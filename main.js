@@ -59,19 +59,14 @@ function giveReward() {
 }
 
 function classChangeGood() {
-   setTimeout(function () {
-      rewardTextGood.classList.add('visible');
-   }, 10);
+   rewardTextGood.classList.add('visible');
    setTimeout(function () {
       rewardTextGood.classList.remove('visible');
    }, 2000);
 }
 
 function classChangeBad() {
-   setTimeout(function () {
-      rewardTextBad.classList.add('visible');
-   }, 100);
-
+   rewardTextBad.classList.add('visible');
    setTimeout(function () {
       rewardTextBad.classList.remove('visible');
    }, 2000);
